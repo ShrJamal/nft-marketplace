@@ -1,6 +1,4 @@
 import ThemeSwitcher from './ThemeSwitcher'
-import { MdMenu } from 'react-icons/md'
-import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
 import ConectWallet from './ConectWallet'
@@ -84,7 +82,7 @@ export default function Navbar() {
             />
           </div>
           <div className="hidden md:mx-5 md:flex md:items-center">
-            <NavLink to="/contact">Home</NavLink>
+            <NavLink to="/">Home</NavLink>
             <NavLink to="/contact">Explore</NavLink>
             <NavLink to="/about">About</NavLink>
             <NavLink to="/about">Resources</NavLink>
