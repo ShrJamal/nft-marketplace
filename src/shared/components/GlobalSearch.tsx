@@ -18,6 +18,7 @@ export default function GlobalSearch({
         <input
           type="text"
           placeholder="Search..."
+          style={{ width: '295px' }}
           className="input input-bordered text-lg menu dropdown-content rounded-none py-2 bg-white w-60"
         />
       </div>
