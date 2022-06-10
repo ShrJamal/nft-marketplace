@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React from 'react'
 import { BiCollection } from 'react-icons/bi'
 import { RiAuctionFill } from 'react-icons/ri'
-import vr from '../../public/images/vr.png'
 
 export default function Article_1() {
   return (
@@ -33,7 +32,7 @@ export default function Article_1() {
                 </h1>
                 <div className="md:hidden mb-5">
                   <Image
-                    src={vr}
+                    src="/images/vr.png"
                     alt="women-with-vr"
                     width={200}
                     height={200}
@@ -77,16 +76,19 @@ export default function Article_1() {
                       <div className="avatar-group -space-x-6">
                         <div className="avatar">
                           <div className="w-12">
+                            {/* eslint-disable-next-line  */}
                             <img src="https://api.lorem.space/image/face?hash=4818" />
                           </div>
                         </div>
                         <div className="avatar">
                           <div className="w-12">
+                            {/* eslint-disable-next-line  */}
                             <img src="https://api.lorem.space/image/face?hash=40311" />
                           </div>
                         </div>
                         <div className="avatar">
                           <div className="w-12">
+                            {/* eslint-disable-next-line  */}
                             <img src="https://api.lorem.space/image/face?hash=84348" />
                           </div>
                         </div>
@@ -106,7 +108,7 @@ export default function Article_1() {
           </div>
           <div className="w-full md:w-1/2 min-h-full hidden md:flex justify-center items-center">
             <Image
-              src={vr}
+              src="/images/vr.png"
               alt="women-with-vr"
               width={700}
               height={700}

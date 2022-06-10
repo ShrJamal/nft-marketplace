@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
-import Footer from '~/shared/components/Footer'
-import Navbar from '~/shared/components/Navbar'
-import { BsFillArrowUpSquareFill } from 'react-icons/bs'
+import Footer from '~/components/Footer'
+import Navbar from '~/components/Header/Navbar'
+
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="flex flex-col h-screen justify-between">

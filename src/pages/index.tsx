@@ -1,7 +1,10 @@
-import react from 'react'
+import dynamic from 'next/dynamic'
 import Article_1 from '~/components/home/Article-1'
 import Article_2 from '~/components/home/Article-2'
-import ParticlesBackground from '~/shared/components/ParticlesBackground'
+const ParticlesBackground = dynamic(
+  () => import('~/components/ParticlesBackground'),
+)
+
 export default function HomePage() {
   return (
     <section>

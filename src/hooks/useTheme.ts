@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 
 export function useTheme() {
-  const [theme, setTheme] = useState<ThemeType | undefined>()
+  const [theme, setTheme] = useState<ThemeType>('dark')
 
   useEffect(() => {
     if (typeof window === 'undefined') return
     if (!theme) {
-      const t = localStorage.getItem('theme') ?? ''
+      const t = (localStorage.getItem('theme') as ThemeType) || 'dark'
       setTheme(themes.includes(t) ? t : 'dark')
       return
     }
@@ -20,5 +20,5 @@ export function useTheme() {
   }
 }
 
-export const themes = ['light', 'dark']
+export const themes = ['light', 'dark'] as const
 type ThemeType = typeof themes[number]
