@@ -7,6 +7,7 @@ import {
   FaInstagramSquare,
 } from 'react-icons/fa'
 import { IoSend } from 'react-icons/io5'
+import SocialMedia from './SocialMedia'
 
 export default function Footer() {
   return (
@@ -120,20 +121,7 @@ export default function Footer() {
           <div className="text-slate-300 font-bold text-lg text-center md:text-start">
             &copy; Copyright 2022 - <Link href={'/'}>WeWeb3</Link>
           </div>
-          <div className="flex justify-center mt-4 md:mt-0">
-            <button className="btn btn-square bg-white hover:bg-white mx-1">
-              <FaTwitterSquare className="h-full w-full text-blue-800" />
-            </button>
-            <button className="btn btn-square bg-white hover:bg-white mx-1">
-              <FaDiscord className="h-full w-full text-blue-800" />
-            </button>
-            <button className="btn btn-square bg-white hover:bg-white mx-1">
-              <FaFacebookSquare className="h-full w-full text-blue-800" />
-            </button>
-            <button className="btn btn-square bg-white hover:bg-white mx-1">
-              <FaInstagramSquare className="h-full w-full text-blue-800" />
-            </button>
-          </div>
+          <SocialMedia />
         </div>
       </div>
     </div>

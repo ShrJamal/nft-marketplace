@@ -74,9 +74,26 @@ export default function Article_1() {
 
                   <div className="stat">
                     <div className="stat-figure text-fuchsia-700">
-                      <div className="avatar online">
-                        <div className="w-16 rounded-full">
-                          <img src="https://api.lorem.space/image/face?w=128&h=128" />
+                      <div className="avatar-group -space-x-6">
+                        <div className="avatar">
+                          <div className="w-12">
+                            <img src="https://api.lorem.space/image/face?hash=4818" />
+                          </div>
+                        </div>
+                        <div className="avatar">
+                          <div className="w-12">
+                            <img src="https://api.lorem.space/image/face?hash=40311" />
+                          </div>
+                        </div>
+                        <div className="avatar">
+                          <div className="w-12">
+                            <img src="https://api.lorem.space/image/face?hash=84348" />
+                          </div>
+                        </div>
+                        <div className="avatar placeholder">
+                          <div className="w-12 bg-neutral-focus text-neutral-content">
+                            <span>+999</span>
+                          </div>
                         </div>
                       </div>
                     </div>
