@@ -8,19 +8,21 @@ export default function Article_1() {
     <article>
       <div
         style={{ position: 'absolute', top: 0, opacity: 0.7, zIndex: -1 }}
-        className="w-full
-    h-full
-    relative
-    before:absolute
-    before:w-full
-    before:h-full
-    before:-z-10
-    before:bg-gradient-to-r
-    before:from-indigo-800
-    before:to-fuchsia-700
-    before:left-0
-    before:top-0
-    before:blur-[15px]"
+        className="
+              w-full
+              h-full
+              relative
+              before:absolute
+              before:w-full
+              before:h-full
+              before:-z-10
+              before:bg-gradient-to-r
+              before:from-indigo-800
+              before:to-fuchsia-700
+              before:left-0
+              before:top-0
+              before:blur-[15px]
+              "
       ></div>
       <div className="container mx-auto py-12 mt-12 md:mt-14 px-3">
         <div className="w-full md:flex">
