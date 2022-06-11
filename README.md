@@ -20,7 +20,7 @@ A Starting template, for a web3 project. it based on:
 7- When you’re done with the development work on the feature, the next step is to push your changes in the branch you created using git flow : <br>
 `git add .` then `git commit -m "[#taskNo] :emoji: : your commit message"` then `git push`<br><br>
 8- After that, on the github page you select your branch and do a pull request to the <b>develop branch</b><br><br>
-9- `git flow feature start feature_branch` can be replaced by `git flow hotfix start hotfix_branch` depending on what your task is (feature, release, hotfix, support)<br><br>
+9- `git flow feature start feature_branch` can be replaced by `git flow hotfix start hotfix_branch` depending on what your task is (feature, bugfix, release, hotfix, support)<br><br>
 10- <b>Make sure that your develop branch is always up to date before you create a new feature</b><br><br>
 
 <span style="color:red">**NEVER PUSH TO MASTER DIRECTLY**</span>
