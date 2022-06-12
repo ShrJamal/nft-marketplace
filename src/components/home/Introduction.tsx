@@ -7,11 +7,13 @@ export default function Introduction() {
   return (
     <article>
       <div
-        style={{ position: 'absolute', top: 0, opacity: 0.7, zIndex: -1 }}
+        style={{ zIndex: -1 }}
         className="
+              absolute
+              top-0
+              opacity-70
               w-full
               h-full
-              relative
               before:absolute
               before:w-full
               before:h-full
@@ -21,7 +23,7 @@ export default function Introduction() {
               before:to-fuchsia-700
               before:left-0
               before:top-0
-              before:blur-[15px]
+              before:blur-[30px]
               "
       ></div>
       <div className="container mx-auto py-12 mt-12 md:mt-14 px-3">

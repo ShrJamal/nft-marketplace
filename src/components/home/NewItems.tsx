@@ -6,13 +6,13 @@ import SocialMedia from '~/components/Footer/SocialMedia'
 
 export default function NewItems() {
   return (
-    <div className="container bg-base-100 mx-auto w-full h-auto p-5 mt-9 rounded-xl">
+    <div className="container mx-auto w-full h-auto p-5 lg:mt-52 rounded-xl">
       <div className="mb-8">
-        <h1 className="font-bold text-4xl">New Items</h1>
+        <h1 className="font-bold text-3xl dark:text-white">New Items</h1>
       </div>
       <ul className="carousel rounded-box ">
         {Array.from({ length: 8 }).map((_, i) => (
-          <li key={i} className="carousel-item mx-2">
+          <li key={i} className="carousel-item mx-2 pb-7">
             <CardItem />
           </li>
         ))}
