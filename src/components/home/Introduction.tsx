@@ -3,7 +3,7 @@ import React from 'react'
 import { BiCollection } from 'react-icons/bi'
 import { RiAuctionFill } from 'react-icons/ri'
 
-export default function Article_1() {
+export default function Introduction() {
   return (
     <article>
       <div
@@ -51,18 +51,20 @@ export default function Article_1() {
                 interchangeable
               </div>
               <div className="md:mt-12 mt-8">
-                <button className="btn btn-wide bg-gradient-to-r from-indigo-700 to-fuchsia-600 text-white">
+                <button className="btn btn-wide bg-gradient-to-r from-indigo-700 to-fuchsia-600 text-white border-none">
                   Explore
                 </button>
               </div>
               <div className="md:mt-12 mt-8 w-full  md:px-0 ">
                 <div className="stats stats-vertical lg:stats-horizontal shadow w-full md:py-2">
                   <div className="stat ">
-                    <div className="stat-figure text-indigo-800">
+                    <div className="stat-figure text-indigo-800 dark:text-indigo-600">
                       <BiCollection className="text-4xl" />
                     </div>
                     <div className="stat-title">Collectibles</div>
-                    <div className="stat-value text-indigo-800">83920</div>
+                    <div className="stat-value text-indigo-800 dark:text-indigo-600">
+                      83920
+                    </div>
                   </div>
 
                   <div className="stat">

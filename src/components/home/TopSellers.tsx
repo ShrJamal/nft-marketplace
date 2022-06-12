@@ -2,13 +2,13 @@ import Link from 'next/link'
 import React, { useRef } from 'react'
 import { AiFillCheckCircle } from 'react-icons/ai'
 
-export default function Article_4() {
+export default function TopSellers() {
   return (
     <div className="container bg-base-100 mx-auto w-full h-auto p-5 mt-9 rounded-xl">
       <div className="mb-8">
         <h1 className="font-bold text-4xl">Top sellers</h1>
       </div>
-      <div className=" rounded-box p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4">
+      <div className="rounded-box  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-3">
         {Array.from({ length: 12 }).map((_, i) => (
           <div key={i} className="mx-2 mt-2">
             <CardItem />
@@ -33,8 +33,10 @@ function CardItem() {
           </Link>
         </div>
         <div className="mx-3">
-          <h1 className="font-bold text-xl ">
-            <Link href={'/'}>AFIFI Hishame</Link>
+          <h1 className="font-bold text-xl text-gray-700 dark:text-white">
+            <span className="hover:text-indigo-700">
+              <Link href={'/'}>AFIFI Hishame</Link>
+            </span>
           </h1>
           <h1>
             <span>2.5 ETH</span>

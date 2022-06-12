@@ -2,13 +2,13 @@ import Link from 'next/link'
 import React from 'react'
 import { AiFillCheckCircle } from 'react-icons/ai'
 
-export default function Article_3() {
+export default function HotCollections() {
   return (
     <div className="container bg-base-100 mx-auto w-full h-auto p-5 mt-9 rounded-xl">
       <div className="mb-8">
         <h1 className="font-bold text-4xl">Hot collections</h1>
       </div>
-      <ul className="carousel rounded-box p-8">
+      <ul className="carousel rounded-box ">
         {Array.from({ length: 8 }).map((_, i) => (
           <li key={i} className="carousel-item mx-2">
             <CardItem />
@@ -21,7 +21,7 @@ export default function Article_3() {
 
 function CardItem() {
   return (
-    <div className="card w-auto shadow-xl	 bg-base-300">
+    <div className="card w-auto shadow-xl	p-5 bg-base-300">
       <figure className="p-5 cursor-pointer">
         <Link href={'/'}>
           <div className="flex justify-center items-center relative w-[255px] h-[160px] hover:transform transition duration-500  hover:scale-105">
@@ -46,8 +46,10 @@ function CardItem() {
       </figure>
       <div className="card-body">
         <div className="w-full flex justify-center items-center">
-          <h1 className="font-bold text-base-800 cursor-pointer">
-            <Link href={'/'}>WeWeb3</Link>
+          <h1 className="font-bold text-gray-700 dark:text-white cursor-pointer">
+            <span className="hover:text-indigo-700">
+              <Link href={'/'}>WeWeb3</Link>
+            </span>
           </h1>
         </div>
         <div className="w-full flex justify-center items-center">

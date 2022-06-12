@@ -5,7 +5,7 @@ import Navbar from '~/components/Header/Navbar'
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="flex flex-col h-screen justify-between">
-      <header style={{ position: 'relative', zIndex: 1 }}>
+      <header className="relative z-50">
         <Navbar />
       </header>
       <main className="mb-auto">{children}</main>

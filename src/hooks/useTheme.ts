@@ -12,6 +12,8 @@ export function useTheme() {
     }
     localStorage.setItem('theme', theme)
     document.documentElement.setAttribute('data-theme', theme)
+    document.documentElement.removeAttribute('class')
+    document.documentElement.classList.add(theme)
   }, [theme])
 
   return {

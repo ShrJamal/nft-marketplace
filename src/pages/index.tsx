@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic'
-import Article_1 from '~/components/home/Article-1'
-import Article_2 from '~/components/home/Article-2'
-import Article_3 from '~/components/home/Article-3'
-import Article_4 from '~/components/home/Article-4'
+import NewItems from '~/components/home/NewItems'
+import HotCollections from '~/components/home/HotCollections'
+import TopSellers from '~/components/home/TopSellers'
+import Introduction from '~/components/home/Introduction'
 const ParticlesBackground = dynamic(
   () => import('~/components/ParticlesBackground'),
 )
@@ -11,17 +11,17 @@ export default function HomePage() {
   return (
     <section>
       <article>
-        <Article_1 />
+        <Introduction />
       </article>
       <section className="container mx-auto rounded-lg bg-gray-800 p-5">
         <article>
-          <Article_2 />
+          <NewItems />
         </article>
         <article>
-          <Article_3 />
+          <HotCollections />
         </article>
         <article>
-          <Article_4 />
+          <TopSellers />
         </article>
       </section>
       <article
