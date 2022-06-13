@@ -17,7 +17,7 @@ export default function HomePage() {
       <article>
         <SellNftInstructions />
       </article>
-      <section className="w-full bg-gray-300 dark:bg-gray-800 p-5">
+      <section className="w-full bg-white dark:bg-gray-800 p-5">
         <article>
           <NewItems />
         </article>
