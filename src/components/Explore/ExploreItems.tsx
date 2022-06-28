@@ -1,4 +1,3 @@
-import React from 'react'
 import CardItem from '../Shared/CardItem'
 
 export default function ExploreItems() {
@@ -16,7 +15,7 @@ export default function ExploreItems() {
           />
         </div>
         <div className="w-full lg:w-[260px] lg:mx-3 mt-5 lg:mt-0">
-          <select className="select w-full max-w-xs">
+          <select className="select w-full max-w-xs" value={'All categories'}>
             <option disabled selected>
               All categories
             </option>
