@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css'
 export default function App({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(newQueryClient())
   return (
-    <ThirdwebProvider desiredChainId={ChainId.Mainnet}>
+    <ThirdwebProvider desiredChainId={ChainId.Rinkeby}>
       <QueryClientProvider client={queryClient}>
         <Hydrate state={pageProps.dehydratedState}>
           <Layout>
